@@ -1,0 +1,262 @@
+% LaTeX file for resume 
+% This file uses the resume document class (res.cls)
+
+%\documentclass[10pt]{res} 
+\documentclass[10pt]{res}
+
+\usepackage{latexsym}
+\usepackage{array}
+\usepackage[svgnames]{xcolor}
+\usepackage{enumerate}
+\usepackage{framed}
+\usepackage{longtable}
+\usepackage{fancyhdr}
+\usepackage[breaklinks,colorlinks,citecolor=blue,linkcolor=magenta]{hyperref}
+\usepackage{xcolor}
+\usepackage{url}
+\usepackage{tocloft}
+\usepackage{enumitem}
+\usepackage[english]{babel}
+\usepackage{blindtext}
+
+\setlist{nolistsep}
+
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font 
+\setlength{\textheight}{9.7in} % increase text height to fit on 1-page
+\addtolength{\voffset}{-0.9cm}
+\addtolength{\resumewidth}{0.5in}
+\oddsidemargin -.3in
+\evensidemargin -.3in
+
+
+
+\newcommand{\link}[1]{{\color{blue}\href{#1}{#1}}}
+\newcommand{\blockline}{\noindent\hspace{-0.03\textwidth}
+{\rule{1.03\textwidth}{0.8pt}}}
+
+\newcommand{\blocklinethin}{\noindent\hspace{-0.03\textwidth}
+{\rule{1.03\textwidth}{0.3pt}}}
+
+\definecolor{maroon}{rgb}{0.76, 0.13, 0.28}
+
+\newsectionwidth{12pt}  % So the text is not indented under section headings
+\pagestyle{empty}
+
+\begin{document}
+
+
+\name{\vspace{-0.35cm} \Large DONG ZHANG, Ph.D. \\[16pt]}
+\address {\small US permanent resident $\mid$ Durham, NC \\
+ \small (614) 397-5173  $\mid$ dongzhanghz@gmail.com}
+\address{\hfill \small github.com/dongzhang84 \\ \hfill \small linkedin.com/in/dongzhanghz  }
+%\address{ \hfill  \small dongzhanghz@gmail.com  \\ \hfill \small github.com/dongzhang84 $\mid$ linkedin.com/in/dongzhanghz}
+
+
+
+
+%\address { \small Seattle, WA $\mid$ (614) 397-5173 $\mid$ dongzhanghz@gmail.com $\mid$ github.com/dongzhang84 $\mid$ linkedin.com/in/dongzhanghz} 
+%\small  dongzhanghz@gmail.com $\mid$ github.com/dongzhang84 $\mid$ linkedin.com/in/dongzhanghz}
+
+\begin{resume}
+
+\vspace{-0.3cm}
+
+\noindent{\blocklinethin}
+\begin{itemize}[leftmargin=-0.4cm]
+%\vspace{-0.1cm}
+\item[] 10+ years of research and industry experience in statistical/machine learning modeling, predictive modeling, programing, data visualization, computer vision, numerical simulations, cloud computing, parallel/distributed computing,  critical thinking, problem solving, project management and excellent communications.
+
+\end{itemize}
+
+\vspace{-0.3cm}
+  
+\section{\large SKILLS}
+\vspace{-0.2cm}
+\noindent{\blockline}
+\begin{itemize}[leftmargin=0.0cm]
+\item[$\circ$]{\textbf{Programming Languages}: Python,  C/C++, SQL, R, bash, MATLAB, HTML}
+
+\item[$\circ$]{\textbf{Machine Learning/Statistical Modeling}}: 
+
+ \begin{itemize}[leftmargin=0.35cm]
+\item[$\diamond$] Supervised Learning (linear/logistic regression, regularization, SVM, naive bayes, k-NN, decision tree, random forest, XGboost, LightGBM, cross validation)
+\item[$\diamond$] Unsupervised Learning (k-means, GMM, DBSCAN, hierarchical clustering, PCA)
+\item[$\diamond$] Deep Learning (CNN, RNN, LSTM), Computer Vision
+\item[$\diamond$] Natural Language Processing (word embedding, TF-IDF, SVD, LSA, topic clustering)
+\item[$\diamond$] Hypothesis Testing, A/B Testing, Time Series Analysis/Forecasting
+ \end{itemize}
+
+\item[$\circ$]{\textbf{Tools}: Scikit-learn, Tensorflow, Keras, Pandas, NLTK, Gensim, Numpy, Scipy, Matplotlib, Seaborn, Fbprophet, Jupyter, PySpark, BeautifulSoup, Flask,  openCV}
+%Spark
+\item[$\circ$]{\textbf{Cloud Computing}: Amazon Web Services (EC2, S3), IBM Cloud (Watson Studio, AutoAI, Watson Assistant), Google Cloud, Docker}
+
+\item[$\circ$]{\textbf{Parallel/Distribution System}: MPI, OpenMP,  Spark (RDD, spark.sql, spark.ml)}
+\end{itemize}
+%$\circ$ Machine Learning: Supervised (regression/classification, SVM, naive bayes, decision tree, random forest, k-NN), Unsupervised (k-means, GMM, DBSCAN, hierarchical clustering, PCA), Deep Learning (CNN, RNN), NLP, Computer Vision \\
+%$\circ$ Tools: Scikit-learn, Tensorflow, Keras, Pandas, NLTK, Gensim, Numpy, Scipy, Matplotlib, Seaborn, Jupyter, Flask\\
+%$\circ$ Mathematics: probability and statistics, linear algebra, calculus, regression, ordinary and partial differential equations,  numerical simulations, Fourier analysis\\
+%$\circ$ High-Performance Computation: parallel computing with MPI and OpenMP,  job schedulers \\
+%$\circ$ Operating Systems: Linux/Unix, Mac OS X, Windows \\  
+
+ \vspace{-0.25cm}
+
+\section{\large EXPERIENCE}
+\vspace{-0.2cm}
+\noindent{\blockline}
+
+\begin{itemize} [leftmargin=0.0cm]
+
+\item {\sl \textbf{Data Scientist}}  \hfill March 2020 --  present \newline
+ \textbf{IBM} | Durham, NC
+ 
+ \begin{itemize}[leftmargin=0.35cm]
+ \item[$\circ$] Analyzed the impact of a detractor recommendation model of the IBM support ticketing system on customer support team using \textbf{statistical hypothesis testing}.
+ \item[$\circ$] Built a new NPS Early Warning System detractor prediction baseline model using \textbf{classification algorithms} XGBoost and LightGBM to significantly improve the accuracy from old model recall $\sim$0.36 to recall $\sim$0.6. 
+ \item[$\circ$] Led a project to develop a \textbf{supervised regression} model to predict work order duration of the IBM technology support services. Aggregated data from IBM Cognitive Enterprise Data Platform (CEDP) to improve model accuracy.  Collaborated with software engineers to implement the model as a \textbf{production}. 
+ \item[$\circ$] Mentored new data scientists/analysts and other IBMer for their career paths and data science training.
+ \end{itemize}
+ 
+ \vspace{0.1cm}
+ 
+ 
+\item{\sl \textbf{Data Science Fellow} } \hfill September 2019 --   December 2019 \newline
+ \textbf{Insight Data Science} | Seattle, WA 
+
+ \begin{itemize}[leftmargin=0.35cm]
+  %\vspace{-0.3cm}
+\item[$\circ$] Consulted for a tech company, created a tool {\bf Classify3D} to automatically segment and identify objects in 3D images. Each image is {\bf {2-10 GB}} with \textbf{50-100 million} data points (\textcolor{blue}{dongzhang84.github.io/classify3d}). 
+\item[$\circ$] Used \textbf{unsupervised ML} tools (DBSCAN and GMM) to cluster 3D images, and used \textbf{computer vision} tool openCV to compare image similarities. Identified several classes of objects above \textbf{95\%} accuracy. Developed the frontend web app using \textbf{Flask} and HTML.
+  \end{itemize}
+
+\vspace{0.1cm}
+
+\item 
+{\sl \textbf{Research Scientist}}, Computational Astrophysicist  \hfill September 2018 -- August 2019 \newline
+\textbf{University of Michigan} | Ann Arbor, MI
+
+ \begin{itemize}[leftmargin=0.35cm]
+ \item[$\circ$] Developed \textbf{high-performance computing} simulations using \textbf{half million CPU-hours} to study multiple astrophysical processes in supernova remnants. Generated  $\sim$\textbf{1\,TB} 3D HDF/VTK data from simulations.
+  \end{itemize}
+  
+ \vspace{0.1cm}
+ 
+\item
+
+{\sl \textbf{Research Associate}}, Computational Astrophysicist and Data Engineer  \newline
+\textbf{University of Virginia} | Charlottesville, VA \hfill September 2015 -- August 2018 
+
+ \begin{itemize}[leftmargin=0.35cm]
+ \item[$\circ$] Led two \textbf{parallel computing} radiation hydrodynamic simulation projects written in C/C++ using $\sim$ \textbf{2 million CPU-hours} on various supercomputers. Generated $\sim$\textbf{10\,TB data} for image processing.  
+ 
+ \item[$\circ$] Developed \textbf{computer vision} tool and created pipeline in Python to visualize $\sim$\textbf{1\,TB} multidimensional data generated from simulations. Analyzed data using linear/polynomial regression, correlation and classification. 
+ 
+ \item[$\circ$] \textbf{Optimized algorithms} to solve radiative transfer equations to perform the most accurate simulations for many radiation systems, which can be observed by multi-wavelength ground and space telescopes.  
+ %Our algorithms showed the best results compared to other colleagues. 
+ 
+% \item Heavily involved in the development of a high-impact astrophysical magnetohydrodynamic code (\textsc{athena++}) written in C++.
+ \end{itemize}
+ 
+ \vspace{0.1cm}
+ 
+ 
+ \item 
+{\sl  \textbf{Research Assistant}}, Theoretical Astrophysicist  \hfill September 2009 -- July 2015  \newline 
+ \textbf{The Ohio State University} | Columbus, OH
+ 
+  \begin{itemize} [leftmargin=0.35cm]
+  \item[$\circ$] Built synthetic models using (semi)-analytic methods to explain up-to-date observations of hundreds of galaxies.
+  \item[$\circ$] Led independent projects to develop new models of dark matter structure to explain the origin of early Universe.
+  %\item Trained in data reduction, data analysis and visualization, and numerical methods to solve ordinary and partial differential equations.
+  \end{itemize}
+  
+\end{itemize}
+  
+ 
+
+
+%\clearpage
+
+ %\textbf{Graduate Research Assistant}, Theoretical Astrophysicist  \hfill  September 2006 -- August 2009 \newline 
+ %{\sl Nanjing University | Nanjing, Jiangsu, China}  \\
+  %\vspace{-3mm}
+ %\begin{itemize}[leftmargin=0.5cm]
+ %\item Developed numerical methods to build a completely new physical model to explain some important and extremely energetic phenomena in the Universe. 
+ %\end{itemize}
+  %\vspace{-2mm}
+  
+  
+ 
+
+  
+ %vspace{-0.3cm}
+ 
+\section{\large SELECTED SIDE PROJECTS}
+\vspace{-0.2cm}
+\noindent{\blockline}
+
+
+\begin{itemize} [leftmargin=0.0cm]
+\item \textbf{Book Recommender System}: Created content-based book recommender system using users review data scrapped from Goodreads, by NLP word embeddings ({\bf TF-IDF}, {\bf SVD}, {\bf LSA}, {\bf doc2vec}), and cosine similarity comparison. Flask used to deployed the model on AWS (\textcolor{blue}{github.com/dongzhang84/BookReco}).
+
+\vspace{0.1cm}
+
+\item \textbf{Kaggle Competition: Predict Future Sales}: Built Lasso and XGBoost \textbf{supervised machine learning regression models} with cross validation to predict future sales of a software firm. 
+
+\vspace{0.1cm}
+
+\item \textbf{Flight Delay Predictor}: Built a tool to predict flight delays for various airports/airlines, using \textbf{supervised classification} models including logistic regression, Gaussian process, random forest, kNN, and SVM. \\ (\textcolor{blue}{github.com/dongzhang84/Flight\_delay})
+
+\vspace{0.1cm}
+
+\item \textbf{Gas Turbulence Driver}: Wrote C++ code to generate 3D turbulence in gaseous medium by Fast Fourier Transform. Analyzed turbulence data using Gaussian distribution and correlation, and visualized turbulence evolution (e.g., \textcolor{blue}{youtu.be/-W0y6wHAU2w}, \textcolor{blue}{youtu.be/O1u1Jgd2148}).
+
+\end{itemize}
+
+ \vspace{-0.2cm}
+  
+\section{\large EDUCATION}
+\vspace{-0.2cm}
+\noindent{\blockline}
+\begin{itemize} [leftmargin=0.0cm]
+ \item[$\diamond$]  {\bf Ph.D.,}  in Astrophysics (GPA 4.0/4.0) \hfill   Ohio State University, Columbus, OH, {\it July, 2015} 
+ \item[$\diamond$]  {\bf M.S.,} Astrophysics (GPA 3.8/40) \hfill  Nanjing University, Nanjing, China, {\it June, 2009} 
+ \item[$\diamond$]  {\bf B.S.,} Astronomy, {\it Summa Cum Laude} (GPA 1/45) \hfill Nanjing University, Nanjing, China,  {\it June, 2006}
+\end{itemize} 
+
+
+ 
+
+
+%\vspace{-0.5cm}
+
+ 
+%\section{AWARDS and FELLOWSHIPS} 
+% Kavli Institute for the Physics and Mathematics of the Universe (University of Tokyo) Fellowship \\ 
+ %\mbox{} \hfill 2018 \\
+ %Best Oral Presentation Award in the Postdoctoral Research Symposium at University of Virginia \\ 
+ %\mbox{} \hfill 2016 \\ 
+ %Distinguished University Fellowship, The Ohio State University \hfill 2014-2015, 2009-2010\\
+ %Grand Prize of Nature Scholarship for the Top Graduate Student, Nanjing University \hfill 2008 \\
+ %Undergraduate Degree Thesis Excellent Award, Nanjing University \hfill 2006\\
+ %People's Scholarship Award, Nanjing University \hfill 2005, 2003\\
+ %Chen-Ning Yang Scholarship Award, Nanjing University \hfill 2004 \\
+
+%\vspace{-0.5cm}
+
+
+\section{\large SYNERGISTIC ACADEMIC ACTIVITIES}
+\vspace{-0.2cm}
+\noindent{\blockline}
+\begin{itemize} [leftmargin=0.0cm]
+ \item[$\circ$] 15 peer-reviewed publications on major journals with 14 first-author publications, total citations 650+. 
+ \item[$\circ$] Reviewed papers as a referee for four top international journals. 
+ \item[$\circ$] Presented $30+$ invited talks at colloquia and seminars, and contributed talks over $10+$ international conferences.
+\end{itemize} 
+
+\end{resume}
+\end{document}
+
+
+
+
